@@ -67,8 +67,12 @@ body{
 	padding-left:30px;
 }
 
-
-
+#livnica1{
+	width:290px;
+	float:left;
+	padding-right:10px;
+	padding-left:30px;
+}
 
 #logo_slika{
 	float:left;
