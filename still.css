@@ -127,3 +127,21 @@ a:visited {
 a:hover {
     color: white;
 }
+
+table, td, th {
+    border: 1px solid white;
+}
+
+th {
+    background-color: #66C2C2;
+    color: #993300;
+}
+
+td{
+	color:white;
+}
+
+div.proiz{
+	padding-left: 30px;
+	padding-bottom: 50px;
+}
