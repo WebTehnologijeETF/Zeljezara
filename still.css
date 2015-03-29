@@ -23,19 +23,51 @@ body{
 
 #glavni h2{
 	color: #FFFFFF;
-	padding-left:10px;
+	padding-left:30px;
 }
 
 #glavni h5{
 	color: #B2E0E0;
 	font-size:7pt;
-	padding-left:10px;
+	padding-left:30px;
 }
 
 #glavni p{
-	color: #009999;
-	padding-left:10px;
+	color: #B2E0E0;
+	padding-right:90px;
+	padding-bottom:170px;
+	font-family:Verdana;
 }
+
+#denis{
+	width:290px;
+	float:left;
+	padding-right:10px;
+	padding-left:30px;
+}
+
+#zelj_slika{
+	width:290px;
+	float:left;
+	padding-right:10px;
+	padding-left:30px;
+}
+
+#elmedin{
+	width:290px;
+	float:left;
+	padding-right:10px;
+	padding-left:30px;
+}
+
+#uprava{
+	width:290px;
+	float:left;
+	padding-right:10px;
+	padding-left:30px;
+}
+
+
 
 
 #logo_slika{
