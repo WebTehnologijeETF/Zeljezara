@@ -2,10 +2,55 @@ body{
 	width: 98%;
 	min-width: 900px;
 	max-width: 1050px;
-	font-family: Museo Slab 700, Verdana, Times New Roman;
+	font-family: Verdana, Times New Roman;
 	font-weight: normal;
 	font-size:16px;
-	margin: 0px auto 0px auto;
-	border: 1px solid black;
-
+	margin: 10px auto 10px auto;
+	border: 2px solid black;
 	}
+	
+	
+
+#glavni {
+	width: 100%;
+	background-color: #7A2900;
+}
+
+
+#logo_slika{
+	float:left;
+	width: 20%;
+	height: 225px;
+}
+
+#nas_slika{
+	float:right;
+	width: 80%;
+	height: 225px;
+}
+
+
+nav.nav1{
+	border: 1px solid black;
+	text-align:center;
+	background-color: #993300;
+}
+
+nav.nav1 ul{
+	list-style:none;
+}
+
+nav.nav1 li a{
+	text-decoration:none;
+	color: #009999;
+	font-size: 27px;
+}
+
+nav.nav1 li{
+	display: inline-block;
+	border-radius: 20px;
+	padding:10px;
+}
+
+nav.nav1 a:hover{
+	color:white;}
