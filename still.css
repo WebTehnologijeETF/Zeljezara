@@ -16,6 +16,27 @@ body{
 	background-color: #7A2900;
 }
 
+#glavni h1{
+	color: #B2E0E0;
+	padding:30px;
+}
+
+#glavni h2{
+	color: #FFFFFF;
+	padding-left:10px;
+}
+
+#glavni h5{
+	color: #B2E0E0;
+	font-size:7pt;
+	padding-left:10px;
+}
+
+#glavni p{
+	color: #009999;
+	padding-left:10px;
+}
+
 
 #logo_slika{
 	float:left;
@@ -42,7 +63,7 @@ nav.nav1 ul{
 
 nav.nav1 li a{
 	text-decoration:none;
-	color: #009999;
+	color: #66C2C2;
 	font-size: 27px;
 }
 
@@ -52,5 +73,9 @@ nav.nav1 li{
 	padding:10px;
 }
 
+	
 nav.nav1 a:hover{
+	color:white;}
+	
+#glavni a:hover{
 	color:white;}
