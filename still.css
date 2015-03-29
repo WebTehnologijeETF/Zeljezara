@@ -104,10 +104,22 @@ nav.nav1 li{
 	border-radius: 20px;
 	padding:10px;
 }
-
+	
+nav.nav2 ul{
+    list-style-image: url('images/logo1.jpg');
+}
 	
 nav.nav1 a:hover{
 	color:white;}
 	
-#glavni a:hover{
-	color:white;}
+a:link {
+    color: #66C2C2;
+}
+
+a:visited {
+    color: #66C2C2;
+}
+
+a:hover {
+    color: white;
+}
