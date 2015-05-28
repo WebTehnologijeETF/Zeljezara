@@ -6,11 +6,11 @@
     <title>Tutorijal 8, Uvod</title>
   </head>
   <body>
-    <h1>Vijesti</h1>
+    <h1>Komentari</h1>
     <?php
      $veza = new PDO("mysql:dbname=wt8;host=localhost;charset=utf8", "wt8user", "wt8pass");
      $veza->exec("set names utf8");
-     $rezultat = $veza->query("select id, novost, tekst,autor, UNIX_TIMESTAMP(vrijeme) vrijeme2,email from komentar order by vrijeme");
+     $rezultat = $veza->query("select id, novost, tekst,autor, UNIX_TIMESTAMP(vrijeme) vrijeme2, email from komentar where id=".$_GET['novost']." order by vrijeme");
      if (!$rezultat) {
           $greska = $veza->errorInfo();
           print "SQL greška: " . $greska[2];

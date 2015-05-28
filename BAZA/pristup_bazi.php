@@ -10,7 +10,7 @@
     if(isset($_GET['novost'])){
       $veza = new PDO("mysql:dbname=wt8;host=localhost;charset=utf8", "wt8user", "wt8pass");
       $veza->exec("set names utf8");
-      $rezultat1 = $veza->query("select id, naslov, tekst, UNIX_TIMESTAMP(vrijeme) vrijeme2, autor from novost where id=".$_GET['novost']." order by vrijeme desc");
+      $rezultat1 = $veza->query("select id, naslov, tekst, UNIX_TIMESTAMP(vrijeme) vrijeme2, autor from novost where id=".$_GET['novost']." order by vrijeme");
       while ($novost = $rezultat1->fetch(PDO::FETCH_ASSOC)) {
 	    echo "<h1>" . $novost['naslov'] . "</h1>";
 	    echo "<small>" .$novost['tekst']. "</small>";
