@@ -108,6 +108,29 @@ nav.nav1 li{
 	border-radius: 20px;
 	padding:10px;
 }
+
+nav.nav1 div{	
+	position: absolute;
+	visibility: hidden;
+	margin: 0;
+	padding: 0;
+	background-color: #993300;
+	border: 1px solid #000000;
+}
+
+nav.nav1 div a{	
+	position: relative;
+	display: block;
+	margin: 0;
+	padding: 7px 14px;
+	width: auto;
+	white-space: nowrap;
+	text-align: left;
+	text-decoration: none;
+	background-color: #993300;
+	color: #66C2C2;
+	font-size: 15px;
+}
 	
 nav.nav2 ul{
     list-style-image: url('http://s2.postimg.org/fu6ad58o5/logo1.jpg');

@@ -6,6 +6,7 @@
   <title>Željezara Ilijaš</title>
   <link href="still.css" rel="stylesheet" type="text/css" />
   
+  <script type="text/javascript" src="dropMenu.js"></script>
   <script type="text/javascript" src="kalkulatorKupovina.js"></script>
   
 </head>
@@ -21,7 +22,13 @@
 			<ul>
 				<li><a href="Naslovna.html"> Naslovna </a> </li>
 				<li><a href="Detaljno.html"> Detaljno </a> </li>
-				<li><a href="Proizvodi.html"> Proizvodi </a> </li>
+				<li><a href="Proizvodi.html" onmouseover="mopen('m1')" onmouseout="mclosetime()"> Proizvodi </a>
+					<div id="m1" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+						<a href="#">Lonac za trosku</a>
+						<a href="#">Kapa za kokile</a>
+						<a href="#">Livna ploča</a>
+					</div>
+				</li>
 				<li><a href="Linkovi.html"> Linkovi </a> </li>
 				<li><a href="Kontakt.html"> Kontakt </a> </li>
 			</ul>

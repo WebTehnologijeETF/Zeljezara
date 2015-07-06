@@ -6,6 +6,9 @@
   <title>Željezara Ilijaš</title>
   <link href="still.css" rel="stylesheet" type="text/css" />
   
+  <script type="text/javascript" src="dropMenu.js"></script>
+  <script type="text/javascript" src="Validacija.js"></script>
+  
 </head>
 
 <body>
@@ -19,41 +22,65 @@
 			<ul>
 				<li><a href="Naslovna.html"> Naslovna </a> </li>
 				<li><a href="Detaljno.html"> Detaljno </a> </li>
-				<li><a href="Proizvodi.html"> Proizvodi </a> </li>
+				<li><a href="Proizvodi.html" onmouseover="mopen('m1')" onmouseout="mclosetime()"> Proizvodi </a>
+					<div id="m1" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+						<a href="#">Lonac za trosku</a>
+						<a href="#">Kapa za kokile</a>
+						<a href="#">Livna ploča</a>
+					</div>
+				</li>
 				<li><a href="Linkovi.html"> Linkovi </a> </li>
 				<li><a href="Kontakt.html"> Kontakt </a> </li>
 			</ul>
 		</nav>
 		
+		<form name ="myform" onsubmit="return checkForm();" method="post">
 		<div id="kontakt">   
-			<label for="name">Ime i prezime: </label>  
-			<input type="text" id="name" name="name" value="" placeholder="Vaše ime i prezime" required="required" autofocus="autofocus" />  
+		
+			<label for="name">*Ime i prezime: </label>  
+			<input type="text" id="name" name="name" value="" placeholder="Vaše ime i prezime" autofocus="autofocus" /> 
+			<br>
+			<span id="nameError"></span>
 	     	<br>
 	     	<br>
 	     		
-	     	<label for="email">Email adresa: </label>  
-			<input type="email" id="email" name="email" value="" placeholder="vasEmail@hotmail.com" required="required" />  
+	     	<label for="email">*Email adresa: </label>  
+			<input type="text" id="email" name="email" value="" placeholder="your@email.com" />
+			<br>
+			<span id="emailError"></span>
 	     	<br>
 	     	<br>
 	     		
-	     	<label for="message">Poruka: </label>  
-			<textarea id="message" name="message" placeholder="Ovdje napišite Vašu poruku." required="required"></textarea>  
+	     	<label for="message">*Poruka: </label>  
+			<textarea id="message" name="message" placeholder="Ovdje napišite Vašu poruku." ></textarea>  
+			<br>
+			<span id="messageError"></span>
 			<br>
 			<br>
 			
-			<label for="message">Telefon: </label>  
-			<input type="tel" name="usrtel">
+			<label for="message">Telefon firme </label>  
+			<input type="text" id="tel" name="tel" value="" placeholder="0XX XXX XXX"/> 
+			<br>
+			<span id="telError"></span>
 			<br>
 			<br>
 
-			<label for="date">Datum rođenja: </label>  
-			<input type="date" name="bday" max="1910-12-31" min="2000-01-01">
+			<label>Firma: </label>  
+			<input type="text" id="firma" name="firma" value="" placeholder="Ime Vase firme"/> 
+			<br>
+			<span id="firmaError"></span>
+			<br>
 			<br>
 			<br>			
+			<label><small><i>*obavezna polja</i></small></label> 
+			<br>
+			<br>
 			
 			<input type="submit" value="Pošalji!" id="submit" /> 
 	     		
-	     	</div>
+	     </div>
+		 </form>
+			
 		
 		<div class="footer"> 
 			<address><center>
