@@ -86,6 +86,19 @@ body{
 	height: 225px;
 }
 
+.valid {		
+	padding: 17px 17px;
+	width: auto;
+	text-align: left;
+	background-color: #993300;
+	color: #66C2C2;
+	font-size: 16px;
+	height: 255px;
+}
+
+.valid div{
+	color:#FF6666;
+}
 
 nav.nav1{
 	border: 1px solid black;

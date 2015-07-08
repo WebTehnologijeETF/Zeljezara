@@ -14,23 +14,23 @@
 <body>
 	<div id="glavni"> 
 		<div id="header2">
-		<a href="Naslovna.html"> <img src="http://s3.postimg.org/irg5t8j6r/logo.jpg" alt="zeljezara_logo" id="logo_slika" /> </a>
+		<a onclick="otvori_stranicu('index.html')"> <img src="http://s3.postimg.org/irg5t8j6r/logo.jpg" alt="zeljezara_logo" id="logo_slika" /> </a>
 		<img src="http://www.b92.net/news/pics/2012/02/21/7763607174f434be4d9a62747514023_orig.jpg" alt="zeljezara_ilijas" id="nas_slika" />
 		</div>
 		
 		<nav class="nav1">
 			<ul>
-				<li><a href="Naslovna.html"> Naslovna </a> </li>
-				<li><a href="Detaljno.html"> Detaljno </a> </li>
-				<li><a href="Proizvodi.html" onmouseover="mopen('m1')" onmouseout="mclosetime()"> Proizvodi </a>
+				<li><a onclick="otvori_stranicu('index.html')">Naslovna</a></li>
+				<li><a onclick="otvori_stranicu('Detaljno.html')">Detaljno</a></li>
+				<li><a onclick="otvori_stranicu('Proizvodi.html')" onmouseover="mopen('m1')" onmouseout="mclosetime()"> Proizvodi </a>
 					<div id="m1" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
 						<a href="#">Lonac za trosku</a>
 						<a href="#">Kapa za kokile</a>
 						<a href="#">Livna ploča</a>
 					</div>
 				</li>
-				<li><a href="Linkovi.html"> Linkovi </a> </li>
-				<li><a href="Kontakt.html"> Kontakt </a> </li>
+				<li><a onclick="otvori_stranicu('Linkovi.html')">Linkovi</a></li>
+				<li><a onclick="otvori_stranicu('Kontakt.html')">Kontakt</a> </li>
 			</ul>
 		</nav>
 		
@@ -71,9 +71,6 @@
 			<span id="firmaError"></span>
 			<br>
 			<br>
-			<br>			
-			<label><small><i>*obavezna polja</i></small></label> 
-			<br>
 			<br>
 			
 			<input type="submit" value="Pošalji!" id="submit" /> 
@@ -92,6 +89,7 @@
 
 	</div>
 
+<script src="otvoriStranicu.js"></script>
 </body>
 </html>
 
